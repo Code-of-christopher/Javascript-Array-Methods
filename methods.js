@@ -143,5 +143,5 @@ const divElement = document.getElementById('div');
     ];
     const result = flattenFunction(numArray);
 
-    divElement.innerHTML = result;
+    //divElement.innerHTML = result;
 }
