@@ -1,6 +1,6 @@
 /*==========     ARRAY METHODS     ==========*/
 
-const divElement = document.getElementById('div');
+//const divElement = document.getElementById('div');
 
 
 
