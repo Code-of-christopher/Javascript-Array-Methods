@@ -1,4 +1,4 @@
-const divElement = document.getElementById('div');
+//const divElement = document.getElementById('div');
 
 
 
@@ -90,4 +90,41 @@ const divElement = document.getElementById('div');
 
     const g = log((a,b) => a + b);
     g(4,5);
+}
+
+
+
+{
+    /* Closures vs Classes  */
+
+    {
+        // Closures
+        function createAdder(a){
+            return function f(b){
+                return a + b;
+            }
+        }
+    
+        const add = createAdder(3);
+        //divElement.innerHTML = add(4);
+    }
+    
+    
+    
+    {
+        // Classes
+        class Adder {
+            constructor(a){
+                this.a = a;
+            }
+        
+            add(b){
+                return this.a + b;
+            }
+        }
+    
+        const addTo = new Adder(4);
+        //addTo.a = 7
+        //divElement.innerHTML = addTo.add(5);
+    }
 }
