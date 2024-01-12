@@ -126,5 +126,31 @@ const divElement = document.getElementById('div');
     }
 
     let result = argsLength('a','b','c','d','e','f');
-    divElement.innerHTML = result;
+    //divElement.innerHTML = result;
+}
+
+
+
+{
+    /* Allow one function call */
+    const once = function(fn){
+        let isFnCalled = false;
+
+        return function(...args){
+            if (!isFnCalled) {
+                isFnCalled = true;
+                return fn(...args);;
+            }
+            else {
+                return undefined;
+            }
+        }
+    }
+
+    let fnGreetings = (name) => `Greetings from ${name}!`;
+
+    let greetingsOnce = once(fnGreetings);
+    //console.log(greetingsOnce('Chris'));
+    //console.log(greetingsOnce('Jane'));
+
 }
