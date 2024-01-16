@@ -67,3 +67,34 @@ const divElement = document.getElementById('div');
     myCar = new Car(' Lamborgini');
     //divElement.innerHTML = Car.hello(myCar);
 }
+
+
+
+{
+    //Inheritance
+    /* Use the 'extends' keyword to create a class inheritance */
+    class Car{
+        constructor(brand){
+            this.brandName = brand;
+        }
+
+        present(){
+            return "I love my " + this.brandName
+        }
+    }
+
+    class Model extends Car{
+        constructor(brand, mod){
+            super(brand);
+            this.model = mod;
+        }
+
+        show(){
+            return this.present() + ', It is a ' + this.model;
+        }
+    }
+
+    myCar = new Model('ford', 'mustang');
+    divElement.innerHTML = myCar.present();
+    //divElement.innerHTML = myCar.show();
+}
