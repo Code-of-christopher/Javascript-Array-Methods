@@ -1,4 +1,4 @@
-const divElement = document.getElementById('div');
+//const divElement = document.getElementById('div');
 
 {
     /* TO Be or Not To Be */
