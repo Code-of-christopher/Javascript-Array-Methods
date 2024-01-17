@@ -1,7 +1,7 @@
-const divElement = document.getElementById('div');
+//const divElement = document.getElementById('div');
 
 {
-    divElement.innerHTML = 
+    //divElement.innerHTML = 
         `<input type="text" id="demo">
         <button type="button" onClick="myFunction()">Test Input</button>
         <p id="p1"></p>`
