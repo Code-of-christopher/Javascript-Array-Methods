@@ -1,4 +1,4 @@
-const divElement = document.getElementById('div');
+//const divElement = document.getElementById('div');
 
 {
     /* Create an object using class Car */
@@ -95,6 +95,43 @@ const divElement = document.getElementById('div');
     }
 
     myCar = new Model('ford', 'mustang');
-    divElement.innerHTML = myCar.present();
+    //divElement.innerHTML = myCar.present();
     //divElement.innerHTML = myCar.show();
+}
+
+
+
+{
+    //Getters and Setters
+    /* Create a getter and setter for the 'carname ' property*/
+    class Car{
+        constructor(brand){
+            this.brandName = brand;
+        }
+
+        get car_name(){
+            return this.brandName;
+        }
+
+        set car_name(x){
+            this.brandName = x;
+        }
+    }
+
+    let myCar = new Car('mercedes');
+
+    function updateCarName() {
+        if (myCar.car_name === 'mercedes') {
+            myCar.car_name = 'Mazda';
+        } else if (myCar.car_name === 'Mazda') {
+            myCar.car_name = 'Volkswagen';
+        } else {
+            myCar.car_name = 'mercedes';
+        }
+
+        //divElement.innerHTML = myCar.car_name;
+    }
+
+    //divElement.innerHTML = myCar.car_name;
+    setInterval(updateCarName, 1000);
 }
