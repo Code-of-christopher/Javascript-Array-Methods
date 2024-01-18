@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {     
+        margin: 0;
+      font-family: Arial, sans-serif;
+      background-image:url(images/231116141038-01-ben-brody-musk-lawsuit.jpg);
+      background-repeat: no-repeat;
+      height: 200vh;
+      scroll-behavior: smooth;
+    }
+
+    .container {
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 0 30px;
+      margin-top:80px;
+    }
+
+    .box {
+      float: left;
+      box-sizing: border-box;
+      padding: 20px;
+      border: 1px solid #ddd;
+      background-color: rgba(242, 242, 242, 0.7);
+     
+    }
+    
+    
+
+    .navbar {
+      background-color: #333;
+      padding: 15px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      box-sizing: border-box;
+      display: flex;
+    }
+
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      padding: 15px;
+      margin-right: 10px;
+    }
+
+    .navbar a:hover {
+      background-color: #555;
+    }
+    .footer {
+      background: #333 0.9;
+      margin-top: 100vh;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .footer a {
+      color: white;
+      text-decoration: none;
+      padding: 15px;
+      margin-right: 10px;
+    }
+
+    .footer a:hover {
+      background-color: #555;
+    }
+  </style>
+</head>
+<body>
+
+<div class="navbar">
+  <a href="#home">Home</a>
+  <a href="#about">About</a>
+  <a href="#services">Services</a>
+  <a href="#contact">Contact</a>
+</div>
+<div class="container">
+    <div class="box" id="home">
+      <h2>Box 1</h2>
+      <p>This is the content of Box 1.</p>
+    </div>
+    <div class="box">
+      <h2>Box 2</h2>
+      <p>This is the content of Box 2.</p>
+    </div>
+    <div class="box">
+      <h2>Box 3</h2>
+      <p>This is the content of Box 3.</p>
+    </div>
+    <div class="box">
+        <h2>Box 4</h2>
+        <p>This is the content of Box 4.</p>
+      </div>
+  </div>
+  <div class="footer">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+  </div>
+<!-- Your page content goes here -->
+
+</body>
+</html>
