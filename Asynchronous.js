@@ -12,7 +12,7 @@
             posts.forEach((post, index) => {
                 output += `<li>${post.title}</li>`;
             });
-            divElement.innerHTML = output;
+            //divElement.innerHTML = output;
         }, 1000);
     }
 
